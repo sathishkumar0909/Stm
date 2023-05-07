@@ -2,7 +2,7 @@
 *{
     margin: 0%;
     padding: 0%;
-    font-family:'Poppins', sans-serif;
+    font-family:'Playfair Display', sans-serif;
 }
 #topcontainer{
     background-color: aqua;
@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
  }
 #logo{
-    width: 135px;
+    width: 123px;
     padding-left: 15px;
 }
 a{
@@ -31,5 +31,5 @@ a{
     color:#02438E;    
 }
 #nav{
-    background-color: #02438E;
+    background-color: #01325B;
 }
