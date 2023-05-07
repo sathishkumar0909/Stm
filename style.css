@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family:'Poppins', sans-serif;
+}
+#topcontainer{
+    background-color: aqua;
+    background-image: url("./image/Home.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+#logo{
+    width: 135px;
+    padding-left: 15px;
+}
+a{
+   text-decoration: none; 
+}
+.card-img-top{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.col-md-auto>a{
+    color: red;
+    font-weight: bold;
+}
+#abt{
+    color:#02438E;    
+}
+#nav{
+    background-color: #02438E;
+}
