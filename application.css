@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family:'Playfair Display', sans-serif;
+}
+input{
+    margin-left: 20px;
+}
+select{
+    margin-left: px;
+}
+#content{
+    margin-left: 20px;
+}
+#infranavlinks>a{
+    color: white;
+}

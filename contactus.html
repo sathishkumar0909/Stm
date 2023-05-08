@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/bootstrap.css"/>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="infra.css"/>
+    <link rel="stylesheet" href="contact.css"/>
+
 
 </head>
 <body>
@@ -23,7 +25,7 @@
                     <div class="row m-2" >
                         <div class="col-md-auto" id="infranavlinks"><a href="./index.html">Home</a></div>
                         <div class="col-md-auto"id="infranavlinks"><a href="">About Us</a></div>
-                        <div class="col-md-auto"id="infranavlinks"><a href="">Program offered</a></div>
+                        <div class="col-md-auto"id="infranavlinks"><a href="./programsoffered.html">Program offered</a></div>
                         <div class="col-md-auto"id="infranavlinks"><a href="./infrastructure.html">Infrastructure</a></div>
                         <div class="col-md-auto"id="infranavlinks"><a href="./contactus.html">Contact Us</a></div>
                     </div>
@@ -45,20 +47,23 @@
                 </div>
                 <div class="col-md-6 justify-content-center">
                     <p class="h2 mt-4" style=" color:#02438E;">Get in touch for query</p>
-                    <form>
+                    <form >
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="name" class="form-control" id="name" placeholder="Name">
+                            <input type="name" name="name" class="form-control" id="name" placeholder="Name">
                           </div>
                         <div class="form-group">
                           <label for="email">Email address</label>
-                          <input type="email" class="form-control" id="email"placeholder="Email">
+                          <input type="email" name="email" class="form-control" id="email"placeholder="Email">
                         </div>
                         <div class="form-group">
                           <label for="message">Message</label>
-                          <textarea type="textarea" class="form-control" id="message" placeholder="Message" rows="5"></textarea>
+                          <textarea type="textarea" name="message" class="form-control" id="message" placeholder="Message" rows="5"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary m-4">Submit</button>
+                        <div class="alert" id="alert">
+                            <p>Message Sent Succesfully</p>
+                        </div>
+                        <button type="submit" onclick="success()" class="btn btn-primary m-4">Submit</button>
                       </form>
                 </div>
             </div>
@@ -85,7 +90,11 @@
                <!-- <div class="col w-50">Created By SK</div> -->
             </div>
         </div>
-
+        <script>
+            function success(){
+                document.getElementById("alert").style.display="block";
+            }
+        </script>
     <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>

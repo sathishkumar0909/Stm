@@ -33,3 +33,11 @@ a{
 #nav{
     background-color: #01325B;
 }
+#apply{
+    background-color: orange;
+    padding: 10px;
+    border-radius: 20px;
+}
+#clickapply{
+    cursor:pointer;
+}

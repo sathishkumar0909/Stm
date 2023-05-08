@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="./application.css"/>
+
+</head>
+<body >
+    <div class="container-fluid align-items-center ">
+        <!-- #navigation bar & logo -->
+        <div class="row align-items-center">
+            <div class="col-md-2 border">
+                <img id="logo" src="./image/logo.png.png" alt="">
+            </div>
+            <div class="col">
+                <div class="row mt-2 justify-content-center"><p class="h2 text-center align-text-center">ST.Mary's Hospital & Institute of Bio Medical Technology<br>(STM)</p></div>
+                <div class="row justify-content-center mt-2" id="nav">
+                    <div class="row m-2" >
+                        <div class="col-md-auto" id="infranavlinks"><a href="./index.html">Home</a></div>
+                        <div class="col-md-auto"id="infranavlinks"><a href="">About Us</a></div>
+                        <div class="col-md-auto"id="infranavlinks"><a href="./programsoffered.html">Program offered</a></div>
+                        <div class="col-md-auto"id="infranavlinks"><a href="./infrastructure.html">Infrastructure</a></div>
+                        <div class="col-md-auto"id="infranavlinks"><a href="./contactus.html">Contact Us</a></div>
+                    </div>
+            </div>
+            </div>
+        </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col"><div class="container m-5">
+                <form style="border:2px solid #4362A5;" >
+                    <div class="row" style="background-color:#4362A5;height:50px;padding:10px;margin:1px;">
+                        <p class="h4 text-white">Application Form</p>
+                    </div>
+                    <div class="row m-3">
+                        <div class="col"><label for="name">Candidate Name</label></div>
+                        <div class="col"><input type="text" name="name" placeholder="Name"/></div>
+                    </div>
+                    
+                    <div class="row m-3">
+                        <div class="col"><label for="dob">Date of Birth</label></div>
+                        <div class="col" id="date"><input type="date" name="dob"/></div>
+                    </div>
+                    
+                    <div class="row m-3">
+                        <div class="col"><label for="gender">Gender</label></div>
+                        <div class="col">
+                            <select name="gender">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Transgender">Transgender</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="row m-3">
+                        <div class="col"><label for="mobile">Mobile No.</label></div>
+                        <div class="col"><input maxlength="10" type="tel" name="mobile" placeholder="Mobile"/></div>  
+                    </div>
+                    
+                    <div class="row m-3">
+                        <div class="col"><label for="email">Email ID.</label></div>
+                        <div class="col"><input  type="email" name="email" placeholder="Email"/></div>
+                    </div>
+                    
+                    <div class="row m-3">
+                        <div class="col"><label for="program">Programme</label></div>
+                        <div class="col"><select name="programme">
+                            <option value="">Select Programme</option>
+                            <option value="GNM -3 years">GNM -3 years</option>
+                            <option value="DMLT">DMLT</option>
+                        </select></div>
+                    </div>
+                    <div class="row m-3 align-items-center justify-content-center">
+                        <input id="submit"type="submit"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+            <div class="col mt-5 ml-5   ">
+                <h3>Application Details</h3>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Programmes</th>
+                        <th scope="col">Duration</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">GNM</th>
+                        <td>3 Years</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">DMLT</th>
+                        <td>2 Years</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="row">
+                    <h5 style="color: #01325B; margin-left: 30px;">Eligibility</h5>
+
+                    <div class="content" style="margin-left: 50px;">
+                        <ul>
+                            <li>He/She should have completed the Age of 17 Years on or before 31st December of the academic year in which the candidate is seeking admission.</li>
+                            <li>10+2 class passed preferably Science (PCB) & English with aggregate of 40% marks.</li>
+                            <li> 10+2 in Arts and English Core/English Elective or Health care Science - Vocational stream ONLY, passing out from recognized Board under AISSCE/CBSE/ICSE/SSCE/HSCE or other equivalent Board with 40% marks</li>                
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+    </div>
+    </div>
+    
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
