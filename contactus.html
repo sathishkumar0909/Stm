@@ -47,7 +47,7 @@
                 </div>
                 <div class="col-md-6 justify-content-center">
                     <p class="h2 mt-4" style=" color:#02438E;">Get in touch for query</p>
-                    <form >
+                    <form onsubmit="sendemail();reset();return false;" >
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="name" name="name" class="form-control" id="name" placeholder="Name">
@@ -63,7 +63,7 @@
                         <div class="alert" id="alert">
                             <p>Message Sent Succesfully</p>
                         </div>
-                        <button type="submit" onclick="success()" class="btn btn-primary m-4">Submit</button>
+                        <button type="submit"  class="btn btn-primary m-4">Submit</button>
                       </form>
                 </div>
             </div>
@@ -90,9 +90,20 @@
                <!-- <div class="col w-50">Created By SK</div> -->
             </div>
         </div>
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
         <script>
-            function success(){
-                document.getElementById("alert").style.display="block";
+            function sendemail(){
+                Email.send({
+                    SecureToken : "50c85160-dc2d-4acc-b34b-7cdfeca2dc21",
+                    To : 'sathishkumar09092002@gmail.com',
+                    From : "stmwebsitemail@gmail.com",
+                    Subject : "Contact US Feedback from Website",
+                    Body : "Name: "+document.getElementById("name").value +"<br> Email: "+document.getElementById("email").value
+                    +"<br> Message: "+document.getElementById("message").value
+                }).then(
+                  message => alert("Message sent successfully")
+                );
             }
         </script>
     <script src="js/bootstrap.bundle.js"></script>

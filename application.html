@@ -35,24 +35,24 @@
     <div class="container">
         <div class="row">
             <div class="col"><div class="container m-5">
-                <form style="border:2px solid #4362A5;" >
+                <form id="application" style="border:2px solid #4362A5;" >
                     <div class="row" style="background-color:#4362A5;height:50px;padding:10px;margin:1px;">
                         <p class="h4 text-white">Application Form</p>
                     </div>
                     <div class="row m-3">
                         <div class="col"><label for="name">Candidate Name</label></div>
-                        <div class="col"><input type="text" name="name" placeholder="Name"/></div>
+                        <div class="col"><input type="text" id="name" name="name" placeholder="Name"/></div>
                     </div>
                     
                     <div class="row m-3">
                         <div class="col"><label for="dob">Date of Birth</label></div>
-                        <div class="col" id="date"><input type="date" name="dob"/></div>
+                        <div class="col" id="date"><input id="dob1"type="date" name="dob"/></div>
                     </div>
                     
                     <div class="row m-3">
                         <div class="col"><label for="gender">Gender</label></div>
                         <div class="col">
-                            <select name="gender">
+                            <select id="gender" name="gender">
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
                                 <option value="Transgender">Transgender</option>
@@ -62,25 +62,29 @@
                     
                     <div class="row m-3">
                         <div class="col"><label for="mobile">Mobile No.</label></div>
-                        <div class="col"><input maxlength="10" type="tel" name="mobile" placeholder="Mobile"/></div>  
+                        <div class="col"><input maxlength="10" id="mobile" type="tel" name="mobile" placeholder="Mobile"/></div>  
                     </div>
                     
                     <div class="row m-3">
                         <div class="col"><label for="email">Email ID.</label></div>
-                        <div class="col"><input  type="email" name="email" placeholder="Email"/></div>
+                        <div class="col"><input id="email"  type="email" name="email" placeholder="Email"/></div>
                     </div>
                     
                     <div class="row m-3">
                         <div class="col"><label for="program">Programme</label></div>
-                        <div class="col"><select name="programme">
+                        <div class="col"><select id="programme" name="programme">
                             <option value="">Select Programme</option>
                             <option value="GNM -3 years">GNM -3 years</option>
                             <option value="DMLT">DMLT</option>
                         </select></div>
                     </div>
                     <div class="row m-3 align-items-center justify-content-center">
-                        <input id="submit"type="submit"/>
+                        <button type="submit">Submit</button>
                     </div>
+                    <div class="alert" style="display: none;">Your message sent</div>
+                    <!-- <div class="row m-3 align-items-center justify-content-center">
+                        <input id="submit"type="submit"/>
+                    </div> -->
                 </form>
             </div>
         </div>
@@ -116,9 +120,13 @@
                     </div>
                   </div>
             </div>
+
     </div>
     </div>
-    
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+  <script src='https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./js/mail.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>

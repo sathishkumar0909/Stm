@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Retrieve Data from Firebase Realtime Database</title>
+  <!-- Add Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+  <!-- Add Firebase Realtime Database SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+</head>
+<body>
+  <h1>Retrieve Data from Firebase Realtime Database</h1>
+  <table id="data">
+    <thead>
+      <tr>
+        <th>Register Number</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Mobile</th>
+        <th>Programme</th>
+        <th>Date of Birth</th>
+        <th>Gender</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    // Firebase configuration
+    var firebaseConfig = {
+      // your firebase config object
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    // Get a reference to the database service
+    var database = firebase.database();
+
+    // Retrieve data from the database
+    var ref = database.ref("Candidate");
+    ref.on("value", gotData, errData);
+
+    function gotData(data) {
+      var students = data.val();
+      var keys = Object.keys(students);
+      var html = "";
+      for (var i = 0; i < keys.length; i++) {
+        var registerNumber = keys[i];
+        var name = students[registerNumber].name;
+        var email = students[registerNumber].email;
+        var mobile = students[registerNumber].mobile;
+        var programme = students[registerNumber].programme;
+        var dob = students[registerNumber].dob;
+        var gender = students[registerNumber].gender;
+        html += "<tr>";
+        html += "<td>" + registerNumber + "</td>";
+        html += "<td>" + name + "</td>";
+        html += "<td>" + email + "</td>";
+        html += "<td>" + mobile + "</td>";
+        html += "<td>" + programme + "</td>";
+        html += "<td>" + dob + "</td>";
+        html += "<td>" + gender + "</td>";
+        html += "</tr>";
+      }
+      document.getElementById("data").getElementsByTagName("tbody")[0].innerHTML = html;
+    }
+
+    function errData(err) {
+      console.log("Error:", err);
+    }
+  </script>
+</body>
+</html>
