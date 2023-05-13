@@ -11,8 +11,9 @@
     background-repeat: no-repeat;
  }
 #logo{
-    width: 123px;
-    padding-left: 15px;
+ height: 180px;
+ align-items: center;
+ padding-left: 20px;
 }
 a{
    text-decoration: none; 

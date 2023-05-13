@@ -1,0 +1,30 @@
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0.125em;
+}
+.nav-item>a {
+  padding-left: 50px;
+justify-content: space-between;
+}
+.carousel-item>img{
+  height: 500px;
+  object-fit:fill;
+}
+.nav-link{
+  color: rgb(255, 255, 255);
+}
+.nav-item>a{
+  color: rgb(255, 255, 255);
+}
+.nav-item>a:hover{
+  text-decoration: none;
+  color: green;
+
+}
+nav-item >a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+#selected>a{
+  color: red;
+}
