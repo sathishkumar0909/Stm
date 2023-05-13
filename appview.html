@@ -2,14 +2,19 @@
 <html>
 <head>
   <title>Retrieve Data from Firebase Realtime Database</title>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
   <!-- Add Firebase SDK -->
   <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
   <!-- Add Firebase Realtime Database SDK -->
   <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
 </head>
-<body>
-  <h1>Retrieve Data from Firebase Realtime Database</h1>
-  <table id="data">
+<body style="margin-inline: 20px;">
+  <h1>Candidate Details</h1>
+  <table class="table table-dark"  id="data">
     <thead>
       <tr>
         <th>Register Number</th>
@@ -26,8 +31,15 @@
 
   <script>
     // Firebase configuration
-    var firebaseConfig = {
-      // your firebase config object
+    const firebaseConfig = {
+      apiKey: "AIzaSyC_xbFR3dj2W58n9LJJ1Qz-pZLd1mBPoxk",
+      authDomain: "stmaryswebsite-fb8ff.firebaseapp.com",
+      projectId: "stmaryswebsite-fb8ff",
+      storageBucket: "stmaryswebsite-fb8ff.appspot.com",
+      databaseURL : "https://stmaryswebsite-fb8ff-default-rtdb.firebaseio.com/",
+      messagingSenderId: "77865070851",
+      appId: "1:77865070851:web:664be3ae00068d6c6cf936",
+      measurementId: "G-JW4MKXGJZQ"
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
