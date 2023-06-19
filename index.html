@@ -7,8 +7,8 @@
     <title>Document</title>
     
     <link rel="stylesheet" href="css/bootstrap.css"/>
-    <link rel="stylesheet" href="./newnav.css"/>
     <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./newnav.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -37,7 +37,7 @@
                         <div  class="nav-item mt-2"><a href="./programsoffered.html">Courses</a></div>
                         <div class="nav-item mt-2" ><a  href="./infrastructure.html">Infrastructure</a></div>
                         <div class="nav-item mt-2" ><a  href="./contactus.html">Contact Us</a></div>
-                        <div class="nav-item dropdown">
+                        <!-- <div class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
                               Dropdown
                             </a>
@@ -58,7 +58,7 @@
                               <li><hr class="dropdown-divider"></li>
                               <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
             </div>
             </div>
@@ -93,7 +93,31 @@
                 </a>
             </div>
         </div>
-        <div class="container h1 mt-5">Events and News</div>
+        <div id="clickapply" class="row m-3 justify-content-center" onclick="window.location.href='./application.html'">
+          <p class="h5" id="apply">Admission Open for 2023-2024 - Apply Now  <img src="./image/new.gif" style="height: 18px;"/></p>
+      </div>
+        <div class="container-fluid">
+          <div class="row mt-5" style="background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);">
+              <div class="col  pt-2 ">
+                  <p class="h1 text-center" id="abt">About STM</p>
+                  <p style="text-align:center" id="abt"> St. Mary's Hospital and Institute of Biomedical Technology, a educational institution that has been serving the field of healthcare and technology since 1993. Our college is a proud unit of the esteemed DR.A.J. Memorial Educational Trust and is recognized by TNGOMS (Tamil Nadu Government Order for Medical Sciences) 429.02.04.1993 and the Indian Nursing Council (INC) since 20th March 1996.</p>
+              </div>
+              <div class="col-md  pt-2 pb-5"style="background: linear-gradient(0deg, rgba(0,29,64,1) 0%, rgba(9,9,121,1) 37%, rgba(2,64,138,1) 100%);">
+                  <div class="container">
+                      <div class="row md-12 mt-3 justify-content-center text-white h2">Admission Open For <em style="color: red;"> 2023-2024</em> </div>
+                      <div class="row">
+                          <div class="col w-50 mt-3"><img  src="./image/nurse.png" style="width: 200px; height:150px" alt=""></div>
+                          <div class="col-md w-50" >
+                              <p class="h5 text-center text-white  mt-3" ><b>Admission Numbers</b><br><br>044 - 2959 3032 / 2726 1074
+                                  Student Section:
+                                  +91 63806 07107 /  99447 85662</p>
+                          </div>
+                  </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+        <div class="container-fluid h1 mt-5">Events and News</div>
     <div class="container">
         <div class="card-group">
             <div class="card m-2 mt-3">
@@ -115,7 +139,7 @@
             
           </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         <div class="card-group">
             <div class="card m-2 mt-5">
               <img class="card-img-top" src="./image/3.jpeg" alt="Card image cap">

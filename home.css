@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family:'Playfair Display', sans-serif;
+}
+#apply{
+    background-color: orange;
+    padding: 10px;
+    border-radius: 20px;
+}
+#clickapply{
+    cursor:pointer;
+}
+.swiper{
+    display: flex;
+    margin-left: 20%;
+align-items: center;
+}
+.swiper>img{
+    padding-left: 30px;
+    margin-top: 20px;
+}

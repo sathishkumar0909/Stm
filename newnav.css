@@ -28,3 +28,21 @@ nav-item >a{
 #selected>a{
   color: red;
 }
+
+
+#logo{
+  height: 180px;
+  align-items: center;
+  padding-left: 20px;
+ }
+ a{
+  text-decoration: none; 
+}
+
+#nav{
+  background-color: #01325B;
+}
+.col-md-auto>a{
+  color: red;
+  font-weight: bold;
+}
